@@ -5,11 +5,9 @@ aliases:
 description: AWS Bedrock AgentCore comprehensive expert for deploying and managing all AgentCore services. Use when working with Gateway, Runtime, Memory, Identity, or any AgentCore component. Covers MCP target deployment, credential management, schema optimization, runtime configuration, memory management, and identity services.
 context: fork
 model: sonnet
-skills:
-  - aws-mcp-setup
 allowed-tools:
   - mcp__aws-mcp__*
-  - mcp__awsdocs__*
+  - mcp__deploy-on-aws__awsknowledge__*
   - Bash(aws bedrock-agentcore-control *)
   - Bash(aws bedrock-agentcore-runtime *)
   - Bash(aws bedrock *)
@@ -30,7 +28,7 @@ AWS Bedrock AgentCore provides a complete platform for deploying and scaling AI 
 
 ## AWS Documentation Requirement
 
-Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__*awsdocs*__*`) before answering. The `aws-mcp-setup` dependency is auto-loaded — if MCP tools are unavailable, guide the user through that skill's setup flow.
+Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__deploy-on-aws__awsknowledge__*`) before answering.
 
 ## When to Use This Skill
 

@@ -2,14 +2,12 @@
 name: aws-cost-operations
 description: AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.
 context: fork
-skills:
-  - aws-mcp-setup
 allowed-tools:
   - mcp__pricing__*
   - mcp__costexp__*
   - mcp__cw__*
   - mcp__aws-mcp__*
-  - mcp__awsdocs__*
+  - mcp__deploy-on-aws__awsknowledge__*
   - Bash(aws ce *)
   - Bash(aws cloudwatch *)
   - Bash(aws logs *)
@@ -29,7 +27,7 @@ This skill provides comprehensive guidance for AWS cost optimization, monitoring
 
 ## AWS Documentation Requirement
 
-Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__*awsdocs*__*`) before answering. The `aws-mcp-setup` dependency is auto-loaded — if MCP tools are unavailable, guide the user through that skill's setup flow.
+Always verify AWS facts using MCP tools (`mcp__aws-mcp__*` or `mcp__deploy-on-aws__awsknowledge__*`) before answering.
 
 ## Integrated MCP Servers
 
@@ -58,7 +56,7 @@ This plugin provides 3 MCP servers:
 - Troubleshoot operational issues
 - Monitor resource utilization
 
-> **Note**: The following servers are available separately via the Full AWS MCP Server (see `aws-mcp-setup` skill) and are not bundled with this plugin:
+> **Note**: The following servers are available separately via the Full AWS MCP Server (see the AWS MCP server configuration) and are not bundled with this plugin:
 > - AWS Billing and Cost Management MCP — Real-time billing details
 > - CloudWatch Application Signals MCP — APM and SLOs
 > - AWS Managed Prometheus MCP — PromQL queries for containers
