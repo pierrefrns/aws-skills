@@ -3,7 +3,7 @@ name: aws-cost-operations
 description: AWS cost optimization, monitoring, and operational excellence expert. Use when analyzing AWS bills, estimating costs, setting up CloudWatch alarms, querying logs, auditing CloudTrail activity, or assessing security posture. Essential when user mentions AWS costs, spending, billing, budget, pricing, CloudWatch, observability, monitoring, alerting, CloudTrail, audit, or wants to optimize AWS infrastructure costs and operational efficiency.
 context: fork
 allowed-tools:
-  - mcp__pricing__*
+  - mcp__deploy-on-aws__awspricing__*
   - mcp__costexp__*
   - mcp__cw__*
   - mcp__aws-mcp__*
